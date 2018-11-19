@@ -172,7 +172,7 @@ class AccessToken(models.Model):
         return timedelta.days*86400 + timedelta.seconds
 
     class Meta:
-        db_table = 'oauth2_access_token'
+        db_table = 'oauth2_accesstoken'
 
 
 class RefreshToken(models.Model):
@@ -199,4 +199,4 @@ class RefreshToken(models.Model):
         return self.token
 
     class Meta:
-        db_table = 'oauth2_refresh_token'
+        db_table = 'oauth2_refreshtoken'
